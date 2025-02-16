@@ -6,14 +6,14 @@ function Navbar() {
   const {cart} = useSelector((state) => state);
   return (
     <div className='flex justify-evenly items-center w-full h-[60px] bg-blue-950'>
-      <NavLink to="/">
+      <NavLink to="/shoppingcart">
         <img src="logo.png" className='w-[100px] h-[40px]' alt="" />
       </NavLink>
       <div className='flex gap-5 text-white justify-center items-center'>
-        <NavLink to="/">
+        <NavLink to="/shoppingcart">
             <p>Home</p>
         </NavLink>
-        <NavLink to="/cart">
+        <NavLink to="/shoppingcart/cart">
               <div className="relative">
               <IoCartOutline  className="text-2xl"/>
                   {

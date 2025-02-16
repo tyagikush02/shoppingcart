@@ -32,7 +32,9 @@ function Cart() {
             </div>
             <div className="mb-20">
               <p>Total Amount :${totalAmount}</p>
-              <button>Checkout Now</button>
+              <NavLink to="/shoppingcart">
+                <button>Checkout Now</button>
+              </NavLink>
             </div>
           </div>
         </div>)
@@ -40,7 +42,7 @@ function Cart() {
         (
           <div className='flex flex-col gap-4 justify-center items-center h-[100vh]'>
             <p>Your cart is empty!</p>
-            <NavLink to="/">
+            <NavLink to="/shoppingcart">
                  <button className='p-1.5 text-green-300 border-2 border-green-300 rounded-2xl'>SHOP NOW</button>
             </NavLink>
           </div>

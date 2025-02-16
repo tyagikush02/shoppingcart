@@ -12,8 +12,8 @@ function App() {
       <Navbar/>
 
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/cart" element={<Cart />}/>
+        <Route path="/shoppingcart/" element={<Home/>}/>
+        <Route path="/shoppingcart/cart/" element={<Cart />}/>
       </Routes>
       <ToastContainer/>
     </div>
